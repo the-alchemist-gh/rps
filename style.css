@@ -1,0 +1,7 @@
+.score,.choice{
+  display: flex;
+}
+
+.score > h2,.choice>h2 {
+  padding-right: 100px;
+}
