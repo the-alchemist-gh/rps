@@ -86,10 +86,10 @@ function playRound(playerSelection,computerSelection){
   
   if(playerScore === 5){
 
-    gameResult.innerHTML = getName + ' Wins 5 points!';
+    gameResult.innerHTML = getName + ' Wins the Game!';
 
   } else if( compScore === 5 ){
-    gameResult.innerHTML ='Computer Wins 5 Points!';
+    gameResult.innerHTML ='Computer Wins the Game!';
 
   }
   
