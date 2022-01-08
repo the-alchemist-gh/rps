@@ -1,7 +1,26 @@
-.score,.choice{
+body{
+  background-color:gainsboro;
+}
+.score,
+.choice {
   display: flex;
 }
 
-.score > h2,.choice>h2 {
+.score > h2,
+.choice > h2 {
   padding-right: 100px;
+}
+
+.playimg {
+  width: 100px;
+}
+
+.choice, .score {
+  display: flex;
+  justify-content: space-around;
+}
+
+button{
+  border-radius: 50%;
+
 }

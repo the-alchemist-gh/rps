@@ -9,20 +9,26 @@
 </head>
 <body>
   <div class="score">
-    <h2>Computer: <span id="computer-score"></span></h2>
-    <h2><span id="players-name"></span>: <span id="user-score"></span></h2>
+    <h2>Computer's Score: <span id="computer-score"></span></h2>
+    <h2><span id="players-name"></span>'s Score': <span id="user-score"></span></h2>
   </div>
   <div class="choice">
-    <h2>Computer's Choice: <span id="computer-choice"></span></h2>
-    <h2><span id="player-name"></span>'s Choice: <span id="user-choice"></span></h2>
+    <div id="pcPlay">
+      <h2>Computer's Choice: <span id="computer-choice"></span></h2>
+    </div>
+    <div id="playerPlay">
+      <h2><span id="player-name"></span>'s Choice: <span id="user-choice"></span></h2>
+      <button ><img id="Rock" class="playimg" src="IMG/rock.svg" alt=""></button>
+      <button ><img id="Paper" class="playimg" src="IMG/paper.svg" alt=""></button>
+      <button ><img id="Scissors" class="playimg" src="IMG/sci.svg" alt=""></button>
+    </div>
+    
   </div>
   
   <h2>Result: <span id="result"></span></h2>
 
   
-  <button id="Rock">Rock</button>
-  <button id="Paper">Paper</button>
-  <button id="Scissors">Scissors</button>
+  
   
   <script src="app.js"></script>
 </body>

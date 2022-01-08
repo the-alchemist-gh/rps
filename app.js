@@ -23,6 +23,11 @@ computerScore.innerHTML = compScore;
 playerName.innerHTML = getName;
 playersName.innerHTML = getName;
 
+function restart(){
+  playerScore = 0;
+  compScore = 0
+}
+
 // computer selection
 function computerPlay() {
 
@@ -84,12 +89,14 @@ function playRound(playerSelection,computerSelection){
     computerScore.innerHTML = compScore;
   }
   
-  if(playerScore === 5){
+  if(playerScore === 3){
 
     gameResult.innerHTML = getName + ' Wins the Game!';
+    restart();
 
-  } else if( compScore === 5 ){
+  } else if( compScore === 3 ){
     gameResult.innerHTML ='Computer Wins the Game!';
+    restart();
 
   }
   
