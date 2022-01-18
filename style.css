@@ -1,5 +1,5 @@
-body{
-  background-color:gainsboro;
+body {
+  background-color: gainsboro;
 }
 .score,
 .choice {
@@ -15,12 +15,18 @@ body{
   width: 100px;
 }
 
-.choice, .score {
+.choice,
+.score {
   display: flex;
   justify-content: space-around;
 }
 
-button{
+button {
   border-radius: 50%;
+}
 
+@media screen and (max-width: 600px) {
+  .choice {
+    display: block;
+  }
 }
