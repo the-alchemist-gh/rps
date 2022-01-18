@@ -1,4 +1,4 @@
-
+alert('Hi, Glad you decided to play. Kindly note this game contains sounds and you might want to reduce your volume. Thank you');
 let gameOptions = ['Rock','Paper','Scissors'];
 let getName = prompt('Kindly Enter your Name');
 let playerName = document.getElementById('player-name');
@@ -92,10 +92,21 @@ function playRound(playerSelection,computerSelection){
   if(playerScore===3){
 
     gameResult.innerHTML = getName + ' Wins the Game!';
+    const audio = document.querySelectorAll('audio');
+    console.log(audio);
+
+    if(!audio) return;
+    audio[0].play();
     restart();
-    
+
   } else if( compScore === 3 ){
     gameResult.innerHTML ='Computer Wins the Game!';
+    const audio = document.querySelectorAll('audio');
+    console.log(audio);
+
+    if(!audio) return;
+    audio[1].play();
+
     restart();
   }
   

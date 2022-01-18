@@ -1,5 +1,5 @@
 body {
-  background-color: gainsboro;
+  background-color: #f2f2f2;
 }
 .score,
 .choice {
@@ -19,6 +19,18 @@ body {
 .score {
   display: flex;
   justify-content: space-around;
+}
+
+.score > h4 {
+  text-align: center;
+}
+
+#computer-score,
+#user-score {
+  padding: 0.4rem 1rem;
+  margin: 1rem 0 0 0;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
 }
 
 button {
