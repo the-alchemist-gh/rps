@@ -89,15 +89,14 @@ function playRound(playerSelection,computerSelection){
     computerScore.innerHTML = compScore;
   }
   
-  if(playerScore === 3){
+  if(playerScore===3){
 
     gameResult.innerHTML = getName + ' Wins the Game!';
     restart();
-
+    
   } else if( compScore === 3 ){
     gameResult.innerHTML ='Computer Wins the Game!';
     restart();
-
   }
   
 }
